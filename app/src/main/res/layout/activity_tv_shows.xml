@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.android.imdb.Activities.TvShows">
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/black"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Top Rated"
+            android:textColor="@android:color/white"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/recyclerView3"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Airing Today"
+            android:textColor="@android:color/white"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/recyclerView"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="On the Air"
+            android:textColor="@android:color/white"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/recyclerView1"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Popular Shows"
+            android:textColor="@android:color/white"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:id="@+id/recyclerView2"
+            android:orientation="horizontal"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
